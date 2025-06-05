@@ -8,8 +8,6 @@ const Nav =()=> {
             <NavLink to="/book">Books</NavLink>
             <NavLink to="/author">Authors</NavLink>
             <NavLink to='/publishing'>Publishing Company</NavLink>
-            <NavLink to='/format'>Formats</NavLink>
-            <NavLink to='/genre'>Genres</NavLink>
         </nav>
     )
 }

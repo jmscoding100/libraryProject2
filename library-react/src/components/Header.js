@@ -1,3 +1,5 @@
+import Nav from "./Nav"
+
 const Header =()=>{
     return(
         <header className="header" id="header">
@@ -7,7 +9,7 @@ const Header =()=>{
                         <h1 className="heading text-capitalize">Local Library</h1>
                     </div>
                     <div className="col">
-                        <p>put nav here</p>
+                        <Nav />
                     </div>
                 </div>
             </div>
