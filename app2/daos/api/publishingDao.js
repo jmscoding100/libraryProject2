@@ -49,11 +49,7 @@ const publishingDao = {
             ORDER BY b.title;`,
             (error, rows) =>{
                 if(!error){
-                    if(rows.length === 1){
-                        res.json(...rows)
-                    } else {
-                        res.json(rows)
-                    }
+                res.json(rows)
                 } else {
                     console.log(console.log(`DAO ERROR: ${table}`, error))
                 }

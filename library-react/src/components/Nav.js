@@ -7,7 +7,9 @@ const Nav =()=> {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/book">Books</NavLink>
             <NavLink to="/author">Authors</NavLink>
-            <NavLink to='/publishing'>Publishing Company</NavLink>
+            <NavLink to="/publishing">Publishing Company</NavLink>
+            <NavLink to="/format">Format</NavLink>
+            <NavLink to="/genre">Genre</NavLink>
         </nav>
     )
 }
