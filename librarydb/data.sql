@@ -160,3 +160,8 @@ VALUES
 (20, 1),
 (20, 8)
 ;
+
+--Do 2-21
+UPDATE book
+SET cover_image = 'image_1.jpg'
+WHERE book_id = 1;

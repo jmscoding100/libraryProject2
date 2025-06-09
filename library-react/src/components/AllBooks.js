@@ -34,6 +34,7 @@ const AllBooks =(props)=>{
         }
     }, [])
 
+    console.log(books)
 
 
     const cardComponents = books.map(book => {
@@ -49,7 +50,7 @@ const AllBooks =(props)=>{
                 rating={book.rating}
                 laguage={book.laguage}
                 num_pages={book.num_pages}
-                cover_image={book.imgUrl}
+                cover_image={book.cover_image}
                 qty={book.qty}
             />
         )
@@ -58,7 +59,7 @@ const AllBooks =(props)=>{
     return (
         <main className="main" id="AllBooksMain">
             <div className="container">
-                <h2 className="text-capitalize heroes-heading">Pick a {heading}</h2>
+                <h2 className="text-capitalize">Pick a {heading}</h2>
                 <p className="text-end">
                     
                 </p>

@@ -6,13 +6,15 @@ const BookCard =(props)=> {
     return (
         <div className="col">
             <div className="card h-100 w-100">
-                <img src="https://placehold.co/50x50" alt="" className="img-fluid image card-img-top" />
+                <img src={`./images/${props.cover_image}`} alt="the title of the book" className="img-fluid image card-img-top" />
                 <section className="card-body">
-                    <h5 className="card-title">{props.title}</h5>
+                    <h5 className="card-title text-capitalize">{props.title}</h5>
                     
                 </section>
                 <footer className="card-footer">
-                    <Link to={`/book/${props.id}`}>View more</Link>
+                    <button className="btn btn-outline-light">
+                        <Link to={`/book/${props.id}`}>View more</Link>
+                    </button>
                 </footer>
             </div>
         </div>

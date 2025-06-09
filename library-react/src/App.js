@@ -36,6 +36,12 @@ const App =()=>{
             <Route path="/publishing" element={<AllData table="publishing" name="publishing" />} />
             <Route path="/publishing/:endpoint" element={<AllBooks table="publishing" />} />
 
+            <Route path="/format" element={<AllData table="format" name="format" />} />
+            <Route path="/format/:endpoint" element={<AllBooks table="format" />} />
+
+            <Route path="/genre" element={<AllData table="genre" name="genre" />} />
+            <Route path="/genre/:endpoint" element={<AllBooks table="genre" />} />
+
             <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
