@@ -6,7 +6,7 @@ const AllDataCard =(props)=> {
     return (
         <div className="col">
             <div className="figure h-100 data-figure text-capitalize">
-                    <Link to={`/${props.table}/${props.name}`}>
+                    <Link to={`/${props.table}/${props.id}`}>
                         { props.name } 
                     </Link>
             </div>

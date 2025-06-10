@@ -10,8 +10,8 @@ router.get('/', (req, res)=>{
 })
 
 
-router.get('/publishing/:publishing_company',(req, res)=>{
-    dao.findBookByPublisher(res, dao.table, req.params.publishing_company)
+router.get('/publishing/:id',(req, res)=>{
+    dao.findBookByPublisher(res, dao.table, req.params.id)
 })
 
 router.get('/sort', (req, res)=>{

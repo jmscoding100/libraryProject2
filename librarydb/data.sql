@@ -165,3 +165,83 @@ VALUES
 UPDATE book
 SET cover_image = 'image_1.jpg'
 WHERE book_id = 1;
+
+UPDATE book
+SET cover_image = 'image_2.jpg'
+WHERE book_id = 2;
+
+UPDATE book
+SET cover_image = 'image_3.jpg'
+WHERE book_id = 3;
+
+UPDATE book
+SET cover_image = 'image_4.jpg'
+WHERE book_id = 4;
+
+UPDATE book
+SET cover_image = 'image_5.jpg'
+WHERE book_id = 5;
+
+UPDATE book
+SET cover_image = 'image_6.jpg'
+WHERE book_id = 6;
+
+UPDATE book
+SET cover_image = 'image_7.jpg'
+WHERE book_id = 7;
+
+UPDATE book
+SET cover_image = 'image_8.jpg'
+WHERE book_id = 8;
+
+UPDATE book
+SET cover_image = 'image_9.jpg'
+WHERE book_id = 9;
+
+UPDATE book
+SET cover_image = 'image_10.jpg'
+WHERE book_id = 10;
+
+UPDATE book
+SET cover_image = 'image_11.jpg'
+WHERE book_id = 11;
+
+UPDATE book
+SET cover_image = 'image_12.jpg'
+WHERE book_id = 12;
+
+UPDATE book
+SET cover_image = 'image_13.jpg'
+WHERE book_id = 13;
+
+UPDATE book
+SET cover_image = 'image_14.jpg'
+WHERE book_id = 14;
+
+UPDATE book
+SET cover_image = 'image_15.jpg'
+WHERE book_id = 15;
+
+UPDATE book
+SET cover_image = 'image_16.jpg'
+WHERE book_id = 16;
+
+UPDATE book
+SET cover_image = 'image_17.jpg'
+WHERE book_id = 17;
+
+UPDATE book
+SET cover_image = 'image_18.jpg'
+WHERE book_id = 18;
+
+UPDATE book
+SET cover_image = 'image_19.jpg'
+WHERE book_id = 19;
+
+UPDATE book
+SET cover_image = 'image_20.jpg'
+WHERE book_id = 20;
+
+UPDATE book
+SET cover_image = 'image_21.jpg'
+WHERE book_id = 21;

@@ -12,8 +12,8 @@ router.get('/', (req, res)=>{
 
 
 //find books by author
-router.get('/author/:author', (req, res)=>{
-    dao.findBookByAuthor(res, dao.table, req.params.author)
+router.get('/author/:id', (req, res)=>{
+    dao.findBookByAuthor(res, dao.table, req.params.id)
 })
 
 //localhost:3005/author/post

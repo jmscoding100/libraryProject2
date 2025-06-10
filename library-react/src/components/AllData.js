@@ -19,7 +19,8 @@ const AllData =( {table, name} )=> {
         
         return (
             <AllDataCard 
-                key={item.author_id || item.pub_id || item.format_id || item.genre_id} 
+                key={item.author_id || item.pub_id || item.format_id || item.genre_id}
+                id={item.author_id || item.pub_id || item.format_id || item.genre_id}
                 table={table} 
                 data={item} 
                 name={item.author_name || item.company_name || item.format || item.genre} 

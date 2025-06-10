@@ -19,7 +19,7 @@ const genreDao = {
         )
     },
 
-    findBookByGenre:(res, table, genre)=>{
+    findBookByGenre:(res, table, id)=>{
         con.execute(
             `SELECT b.book_id, b.title, a.author_id, p.pub_id, b.copyright_year, b.edition, b.edition_year, f.format_id, b.binding, b.rating, b.language, b.num_pages, b.cover_image, b.qty
             FROM book b
@@ -28,7 +28,7 @@ const genreDao = {
             JOIN format f USING (format_id)
             JOIN book_to_genre bg ON b.book_id = bg.book_id
             JOIN genre g ON bg.genre_id = g.genre_id
-            WHERE g.genre = '${genre}'
+            WHERE g.genre_id = '${id}'
             ORDER BY g.genre_id;`,
             (error, rows) =>{
                 if(!error){

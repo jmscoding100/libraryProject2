@@ -34,7 +34,7 @@ const AllBooks =(props)=>{
         }
     }, [])
 
-    console.log(books)
+
 
 
     const cardComponents = books.map(book => {
@@ -59,7 +59,7 @@ const AllBooks =(props)=>{
     return (
         <main className="main" id="AllBooksMain">
             <div className="container">
-                <h2 className="text-capitalize">Pick a {heading}</h2>
+                <h2 className="text-capitalize">Choose your favorite</h2>
                 <p className="text-end">
                     
                 </p>

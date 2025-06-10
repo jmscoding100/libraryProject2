@@ -38,15 +38,15 @@ const publishingDao = {
         )
     },
 
-    findBookByPublisher:(res, table, publishing_company)=>{
+    findBookByPublisher:(res, table, id)=>{
         con.query(
             `SELECT b.book_id, b.title, a.author_id, p.pub_id, b.copyright_year, b.edition, b.edition_year, f.format_id, b.binding, b.rating, b.language, b.num_pages, b.cover_image, b.qty
             FROM book b
             JOIN author a USING (author_id)
             JOIN publishing_company p USING (pub_id)
             JOIN format f USING (format_id)
-            WHERE p.company_name = '${publishing_company}'
-            ORDER BY b.title;`,
+            WHERE p.pub_id = ${id}
+            ORDER by b.title;`,
             (error, rows) =>{
                 if(!error){
                 res.json(rows)

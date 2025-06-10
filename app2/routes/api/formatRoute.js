@@ -9,8 +9,8 @@ router.get('/', (req, res)=>{
     dao.findFormat(res, dao.table)
 })
 
-router.get('/format/:format', (req, res)=>{
-    dao.findBookByFormat(res, dao.table, req.params.format)
+router.get('/format/:id', (req, res)=>{
+    dao.findBookByFormat(res, dao.table, req.params.id)
 })
 
 module.exports = router

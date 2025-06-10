@@ -10,8 +10,8 @@ router.get('/', (req, res)=>{
 })
 
 //find by genre
-router.get('/genre/:genre', (req, res)=>{
-    dao.findBookByGenre(res, dao.table, req.params.genre)
+router.get('/genre/:id', (req, res)=>{
+    dao.findBookByGenre(res, dao.table, req.params.id)
 })
 
 
