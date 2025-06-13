@@ -6,6 +6,7 @@ const SingleBook =()=>{
 
 
     const [ book, setBook ] = useState({})
+    
 
     const params = useParams()
 
@@ -24,7 +25,7 @@ const SingleBook =()=>{
                 <div className="row">
                     <div className="col">
                         <h2 className="single-book-heading">{book.title}</h2>
-                        <img src={`/images/${book.cover_image}`} alt="placeholder img" className="img-fluid image hero-single-img" />
+                        <img src={`/images/${book.cover_image}`} alt="placeholder img" className="img-fluid image cover-single-img" />
                     </div>
                     <div className="col">
                         <h3 className="book-info">Info</h3>

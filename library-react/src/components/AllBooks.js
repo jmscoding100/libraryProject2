@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 import axios from 'axios'
 
 import BookCard from './BookCard'
@@ -35,8 +35,6 @@ const AllBooks =(props)=>{
     }, [])
 
 
-
-
     const cardComponents = books.map(book => {
         return (
             <BookCard
@@ -61,7 +59,7 @@ const AllBooks =(props)=>{
             <div className="container">
                 <h2 className="text-capitalize">Choose your favorite</h2>
                 <p className="text-end">
-                    
+                    <Link to="/addBook">Add a Book </Link>
                 </p>
                 <section className="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4">
                     { cardComponents }
@@ -70,11 +68,6 @@ const AllBooks =(props)=>{
         </main>
     )
 }
-
-
-
-  
-
 
 
 export default AllBooks
