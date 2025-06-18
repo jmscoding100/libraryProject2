@@ -245,3 +245,19 @@ WHERE book_id = 20;
 UPDATE book
 SET cover_image = 'image_21.jpg'
 WHERE book_id = 21;
+
+UPDATE book
+SET cover_image = 'image_22.jpg'
+WHERE book_id = 22;
+
+UPDATE book
+SET cover_image = 'image_24.jpg'
+WHERE book_id = 24;
+
+UPDATE book
+SET cover_image = 'image_25.jpg'
+WHERE book_id = 25;
+
+UPDATE book
+SET cover_image = 'image_26.jpg'
+WHERE book_id = 26;

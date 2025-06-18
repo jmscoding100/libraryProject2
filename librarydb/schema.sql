@@ -77,3 +77,6 @@ ALTER TABLE book
 AlTER TABLE book
     add date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     add last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+ALTER TABLE book
+    MODIFY binding ENUM('paperback', 'hardback', 'non-physical');

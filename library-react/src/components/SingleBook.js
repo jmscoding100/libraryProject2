@@ -16,7 +16,13 @@ const SingleBook =()=>{
         axios.get(url).then(res => {
             setBook(res.data)
         })
-    }, [])
+    }, [params.id])
+
+
+
+
+
+
 
 
     return(
