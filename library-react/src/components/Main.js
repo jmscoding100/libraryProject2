@@ -2,9 +2,9 @@ const Main =()=>{
     return(
         <main className="main" id="main">
             <div className="container">
-                <h2 className="h2-heading">
-                    main
-                </h2>
+                <p className="greetings text-capitalize text-center">We hope that you find what you're looking for 😄</p>
+                <img src="/images/home_page.jpg"alt="placeholder img" className="img-fluid image" id="homeImg" />
+                
             </div>
         </main>
     )

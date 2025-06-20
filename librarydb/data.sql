@@ -161,6 +161,16 @@ VALUES
 (20, 8)
 ;
 
+INSERT INTO book_to_genre(book_id, genre_id)
+VALUES
+(21, 1),
+(22, 1),
+(24, 1),
+(25, 1),
+(25, 9),
+(26, 1);
+
+
 --Do 2-21
 UPDATE book
 SET cover_image = 'image_1.jpg'

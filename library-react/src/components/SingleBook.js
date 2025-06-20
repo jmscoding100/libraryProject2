@@ -35,7 +35,7 @@ const SingleBook =()=>{
                     </div>
                     <div className="col">
                         <h3 className="book-info">Info</h3>
-                        <ul className="book-info-list list-group list-group-flush">
+                        <ul className="book-info-list list-group list-group-flush book-style">
                             <li className="list-group-item">Author: {book.author_name}</li>
                             <li className="list-group-item">Publisher: {book.company_name}</li>
                             <li className="list-group-item">Copyright Year: {book.copyright_year}</li>
