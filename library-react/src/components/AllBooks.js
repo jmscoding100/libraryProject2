@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router'
-import axios from 'axios'
+// this used for the live version
+// import axios from 'axios'
 
 import BookCard from './BookCard'
+//this is for the demo
+import { mockBooks } from '../mockData'
 
 
 const AllBooks =(props)=>{
@@ -18,21 +21,43 @@ const AllBooks =(props)=>{
         setHeading(props.table)
     }, [])
 
+/**
+ *  this is how you filter through the live version
+useEffect(()=> {
 
-    useEffect(()=> {
+    if (table == 'book') {
+        const url = `http://localhost:3005/api/${table}`
 
-        if (table == 'book') {
-            const url = `http://localhost:3005/api/${table}`
-    
-            axios.get(url).then(res => setBooks(res.data))
+        axios.get(url).then(res => setBooks(res.data))
 
-        } else {
-            setHeading(params.endpoint)
-            const url = `http://localhost:3005/api/${table}/${table}/${params.endpoint}`
+    } else {
+        setHeading(params.endpoint)
+        const url = `http://localhost:3005/api/${table}/${table}/${params.endpoint}`
 
-            axios.get(url).then(res => setBooks(res.data))
-        }
-    }, [])
+        axios.get(url).then(res => setBooks(res.data))
+    }
+}, [])
+ */
+
+
+// this is how you filter through the demo
+useEffect(() => {
+    if (table === 'book') {
+        // Show all books
+        setBooks(mockBooks);
+    } else {
+        // Filter by author / genre / publisher, etc., based on URL
+        setHeading(params.endpoint);
+
+        const filtered = mockBooks.filter((book) => {
+        const field = book[table]; 
+        if (!field) return false;
+        return String(field).toLowerCase() === String(params.endpoint).toLowerCase();
+        });
+
+        setBooks(filtered);
+    }
+}, [table, params.endpoint]);
 
 
     const cardComponents = books.map(book => {
@@ -58,9 +83,10 @@ const AllBooks =(props)=>{
         <main className="main" id="AllBooksMain">
             <div className="container">
                 <h2 className="text-capitalize">Choose your favorite</h2>
-                <p className="text-end">
+                
+                {/*uncomment for live version<p className="text-end">
                     <Link to="/addBook">Add a Book </Link>
-                </p>
+                </p>*/}
                 <section className="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4">
                     { cardComponents }
                 </section> 

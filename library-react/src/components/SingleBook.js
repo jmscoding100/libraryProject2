@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
-import axios from 'axios'
+//this is for the live version import axios from 'axios'
+
+//this is for the demo
+import { mockBooks } from '../mockData'
 
 const SingleBook =()=>{
 
@@ -10,6 +13,8 @@ const SingleBook =()=>{
 
     const params = useParams()
 
+    /**this is how you can view the information on a single book
+     * 
     useEffect(()=> {
         const url = `http://localhost:3005/api/book/${params.id}`
 
@@ -17,9 +22,17 @@ const SingleBook =()=>{
             setBook(res.data)
         })
     }, [params.id])
+     * 
+     */
 
 
-
+//this is how the demo views information on a single book
+useEffect(() => {
+    const found = mockBooks.find(
+        (b) => String(b.book_id) === String(params.id)
+    );
+    setBook(found || {});
+}, [params.id]);
 
 
 
@@ -29,11 +42,11 @@ const SingleBook =()=>{
         <main className="single-book" id="SingleBookMain">
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-md-6">
                         <h2 className="single-book-heading">{book.title}</h2>
                         <img src={`/images/${book.cover_image}`} alt="placeholder img" className="img-fluid image cover-single-img" />
                     </div>
-                    <div className="col">
+                    <div className="col-md-6">
                         <h3 className="book-info">Info</h3>
                         <ul className="book-info-list list-group list-group-flush book-style">
                             <li className="list-group-item">Author: {book.author_name}</li>
