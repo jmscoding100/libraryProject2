@@ -43,19 +43,44 @@ useEffect(()=> {
 // this is how you filter through the demo
 useEffect(() => {
     if (table === 'book') {
-        // Show all books
+        setHeading('book');
         setBooks(mockBooks);
-    } else {
-        // Filter by author / genre / publisher, etc., based on URL
+    } else if (table === 'author') {
         setHeading(params.endpoint);
-
-        const filtered = mockBooks.filter((book) => {
-        const field = book[table]; 
-        if (!field) return false;
-        return String(field).toLowerCase() === String(params.endpoint).toLowerCase();
-        });
-
-        setBooks(filtered);
+        setBooks(
+        mockBooks.filter(
+            (b) =>
+            b.author_name &&
+            b.author_name.toLowerCase() === String(params.endpoint).toLowerCase()
+        )
+        );
+    } else if (table === 'publishing') {
+        setHeading(params.endpoint);
+        setBooks(
+        mockBooks.filter(
+            (b) =>
+            b.company_name &&
+            b.company_name.toLowerCase() === String(params.endpoint).toLowerCase()
+        )
+        );
+    } else if (table === 'format') {
+        setHeading(params.endpoint);
+        setBooks(
+        mockBooks.filter(
+            (b) =>
+            b.format &&
+            b.format.toLowerCase() === String(params.endpoint).toLowerCase()
+        )
+        );
+    } else if (table === 'genre') {
+        setHeading(params.endpoint);
+        setBooks(
+        mockBooks.filter(
+            (b) =>
+            b.genre &&
+            b.genre.toLowerCase() === String(params.endpoint).toLowerCase()
+        )
+        );
     }
 }, [table, params.endpoint]);
 

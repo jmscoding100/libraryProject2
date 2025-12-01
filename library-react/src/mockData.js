@@ -1,4 +1,6 @@
 // src/mockData.js
+//you might have to fix the images
+
 
 export const mockBooks = [
     {
@@ -7,12 +9,16 @@ export const mockBooks = [
         copyright_year: 2006,
         edition: "1st",
         edition_year: 2006,
-        binding: "Hardcover",
+        binding: "hardback",
         rating: 4,
         language: "English",
-        num_pages: 176,
+        num_pages: 172,
         cover_image: "image_1.jpg",
-        qty: 2
+        qty: 2,
+        author_name: "Pilkey, Dav",
+        company_name: "Blue Sky Press",
+        format: "physical",
+        genre: "humor"
     },
     {
         book_id: 2,
@@ -20,12 +26,16 @@ export const mockBooks = [
         copyright_year: 2020,
         edition: "1st",
         edition_year: 2020,
-        binding: "Hardcover",
+        binding: "hardback",
         rating: 5,
         language: "English",
         num_pages: 240,
         cover_image: "image_2.jpg",
-        qty: 5
+        qty: 5,
+        author_name: "Pilkey, Dav",
+        company_name: "Graphix",
+        format: "physical",
+        genre: "graphic novel"
     },
     {
         book_id: 3,
@@ -33,12 +43,16 @@ export const mockBooks = [
         copyright_year: 2010,
         edition: "1st",
         edition_year: 2010,
-        binding: "Paperback",
+        binding: "paperback",
         rating: 5,
         language: "English",
         num_pages: 224,
         cover_image: "image_3.jpg",
-        qty: 4
+        qty: 4,
+        author_name: "Telgemeier, Raina",
+        company_name: "Graphix",
+        format: "physical",
+        genre: "graphic novel"
     },
     {
         book_id: 4,
@@ -46,12 +60,16 @@ export const mockBooks = [
         copyright_year: 2012,
         edition: "1st",
         edition_year: 2012,
-        binding: "Paperback",
+        binding: "paperback",
         rating: 4,
         language: "English",
         num_pages: 240,
         cover_image: "image_4.jpg",
-        qty: 3
+        qty: 3,
+        author_name: "Telgemeier, Raina",
+        company_name: "Graphix",
+        format: "physical",
+        genre: "graphic novel"
     },
     {
         book_id: 5,
@@ -59,12 +77,16 @@ export const mockBooks = [
         copyright_year: 1998,
         edition: "1st",
         edition_year: 1998,
-        binding: "Hardcover",
+        binding: "hardback",
         rating: 5,
         language: "English",
         num_pages: 320,
         cover_image: "image_5.jpg",
-        qty: 6
+        qty: 6,
+        author_name: "Rowling, J.K",
+        company_name: "Scholastic Press",
+        format: "physical",
+        genre: "fantasy"
     },
     {
         book_id: 6,
@@ -72,12 +94,16 @@ export const mockBooks = [
         copyright_year: 1999,
         edition: "1st",
         edition_year: 1999,
-        binding: "Hardcover",
+        binding: "hardback",
         rating: 5,
         language: "English",
         num_pages: 341,
         cover_image: "image_6.jpg",
-        qty: 4
+        qty: 4,
+        author_name: "Rowling, J.K",
+        company_name: "Scholastic Press",
+        format: "physical",
+        genre: "fantasy"
     },
     {
         book_id: 7,
@@ -85,12 +111,16 @@ export const mockBooks = [
         copyright_year: 2007,
         edition: "1st",
         edition_year: 2007,
-        binding: "Hardcover",
+        binding: "hardback",
         rating: 4,
         language: "English",
         num_pages: 221,
         cover_image: "image_7.jpg",
-        qty: 8
+        qty: 8,
+        author_name: "Kinney, Jeff",
+        company_name: "Amulet Books",
+        format: "physical",
+        genre: "humor"
     },
     {
         book_id: 8,
@@ -98,12 +128,16 @@ export const mockBooks = [
         copyright_year: 2010,
         edition: "1st",
         edition_year: 2010,
-        binding: "Paperback",
+        binding: "paperback",
         rating: 4,
         language: "English",
         num_pages: 224,
         cover_image: "image_8.jpg",
-        qty: 5
+        qty: 5,
+        author_name: "Peirce, Lincoln",
+        company_name: "HarperCollins",
+        format: "physical",
+        genre: "humor"
     },
     {
         book_id: 9,
@@ -111,12 +145,16 @@ export const mockBooks = [
         copyright_year: 1950,
         edition: "1st",
         edition_year: 1950,
-        binding: "Paperback",
+        binding: "paperback",
         rating: 5,
         language: "English",
         num_pages: 208,
         cover_image: "image_9.jpg",
-        qty: 3
+        qty: 3,
+        author_name: "Lewis, C.S.",
+        company_name: "HarperCollins",
+        format: "physical",
+        genre: "fantasy"
     },
     {
         book_id: 10,
@@ -124,11 +162,15 @@ export const mockBooks = [
         copyright_year: 2008,
         edition: "1st",
         edition_year: 2008,
-        binding: "Paperback",
+        binding: "paperback",
         rating: 5,
         language: "English",
         num_pages: 374,
         cover_image: "image_10.jpg",
-        qty: 7
-    }
+        qty: 7,
+        author_name: "Collins, Suzanne",
+        company_name: "Scholastic Press",
+        format: "physical",
+        genre: "science fiction"
+    } 
 ];

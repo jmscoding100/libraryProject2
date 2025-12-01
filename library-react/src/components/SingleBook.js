@@ -44,7 +44,9 @@ useEffect(() => {
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="single-book-heading">{book.title}</h2>
-                        <img src={`/images/${book.cover_image}`} alt="placeholder img" className="img-fluid image cover-single-img" />
+                        {/* this is for the live version make sure to comment out the image element under this one <img src={`/images/${book.cover_image}`} alt="placeholder img" className="img-fluid image cover-single-img" />*/}
+
+                        <img src="https://placehold.co/200x300" alt="placeholder img" class="img-fluid image" />
                     </div>
                     <div className="col-md-6">
                         <h3 className="book-info">Info</h3>
